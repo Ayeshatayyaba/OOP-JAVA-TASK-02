@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Car {
+ String model;
+ public Car(String carModel) {
+ model = carModel;
+ }
+ public void displayModel() {
+ System.out.println("The car model is: " + model);
+}
+}
+public class Main {
+ public static void main(String[] args) {
+ Scanner scanner = new Scanner(System.in);
+ System.out.print("Enter the car's model: ");
+ String userInput = scanner.nextLine();
+ Car myCar = new Car(userInput);
+ myCar.displayModel();
+ }
+}
